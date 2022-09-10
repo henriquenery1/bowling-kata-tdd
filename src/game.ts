@@ -7,4 +7,8 @@ export class Game {
     const score: number = this.rolls.reduce((a, b) => a + b, 0)
     return score
   }
+
+  roll(downPins: number): void {
+    this.rolls[this.currentRoll++] = downPins
+  }
 }
