@@ -27,7 +27,13 @@ describe("Game", () => {
     rollStrike()
     game.roll(3)
     game.roll(4)
+    rollMany(16, 0)
     expect(game.score()).toBe(24);
+  });
+
+  it("should score 300 for a perfect game", () => {
+    rollMany(12, 10)
+    expect(game.score()).toBe(300);
   });
 });
 
