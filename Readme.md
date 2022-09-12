@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=F63DSb1EUOE&ab_channel=OtavioLemos
 ### business rules
 1. Game: 10 frames
 
-2. each frame the player has two opportunities
+2. Each frame the player has two opportunities
 
 3. Score for the frame = the total number of pins knocked down + bonuses for strikes and spares.
 
