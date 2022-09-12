@@ -22,12 +22,23 @@ describe("Game", () => {
     game.roll(2);
     expect(game.score()).toBe(14);
   });
+
+  it("should score 24 for a strike followed by a 3 and a 4 ball", () => {
+    rollStrike()
+    game.roll(3)
+    game.roll(4)
+    expect(game.score()).toBe(24);
+  });
 });
 
 function rollMany(plays: number, downPins: number): void {
   for (let i = 0; i < plays; i++) {
     game.roll(downPins);
   }
+}
+
+function rollStrike (): void {
+  game.roll(10)
 }
 
 function rollSpare(): void {
