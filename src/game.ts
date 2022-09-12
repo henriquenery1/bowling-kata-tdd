@@ -2,7 +2,7 @@ export class Game {
   private totalPlays: number = 20;
   private rolls: number[] = new Array(this.totalPlays++).fill(0);
   private currentRoll: number = 0;
-  frameIndex: number = 0;
+  private frameIndex: number = 0;
   private spareValue: number = 10;
 
   score(): number {
