@@ -1,7 +1,7 @@
 # Bowling kata
-Repository made to train clean code practices, tdd and semantic commits
+## Repository made to train clean code practices, tdd and semantic commits
 
-## Inspired by the video of the Otavio lemos YouTube channel
+### Inspired by the video of the Otavio lemos YouTube channel
 https://www.youtube.com/watch?v=F63DSb1EUOE&ab_channel=OtavioLemos
 
 ### business rules
