@@ -23,6 +23,10 @@ export class Game {
     return score;
   }
 
+  roll(downPins: number): void {
+    this.rolls[this.currentRoll++] = downPins;
+  }
+
   private isSpare(frameIndex: number): boolean {
     return (
       this.rolls[frameIndex] + this.rolls[frameIndex + 1] === this.spareValue
@@ -44,9 +48,5 @@ export class Game {
 
   private sumOfBallsInFrame(frameIndex: number): number {
     return this.rolls[frameIndex] + this.rolls[frameIndex + 1];
-  }
-
-  roll(downPins: number): void {
-    this.rolls[this.currentRoll++] = downPins;
   }
 }
